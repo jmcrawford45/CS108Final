@@ -63,7 +63,7 @@ public class AccountServlet extends HttpServlet {
         	user = new User(name, hashPassword, salt);
         	TableAbstraction.updateUser(name, user, con);
         	request.getSession().setAttribute("user", name);
-        	request.getSession().setAttribute("uid", name);
+        	request.getSession().setAttribute("uid", user.getID());
         	request.getRequestDispatcher("HomePage.jsp").forward(request, response);
         }
 	}
