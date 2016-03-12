@@ -52,10 +52,6 @@ public class ContextListener implements ServletContextListener {
             MYSQL_DATABASE_SERVER, MYSQL_USERNAME , MYSQL_PASSWORD);
             Statement stmt = con.createStatement();
             stmt.executeQuery("USE " + MYSQL_DATABASE_NAME);
-            stmt.executeUpdate("DROP TABLE IF EXISTS users;");
-            stmt.executeUpdate("CREATE TABLE users(uid INT, id varchar(255), user BLOB);");
-            stmt.executeUpdate("DROP TABLE IF EXISTS stats;");
-            stmt.executeUpdate("CREATE TABLE stats(stats BLOB);");
     		} catch (SQLException e) {
             e.printStackTrace();
             }
