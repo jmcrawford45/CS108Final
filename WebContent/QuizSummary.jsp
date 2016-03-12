@@ -123,5 +123,10 @@ for(int i = 0; i < recentscores.size(); i++){
 <input type = "submit" value = "Mark as Innappropriate" class="button"/>
 </form>
 
+<br>
+<form action = "HomePage.jsp" method="post">
+<input type = "submit" value = "Home" class="button"/>
+</form>
+
 </body>
 </html>
