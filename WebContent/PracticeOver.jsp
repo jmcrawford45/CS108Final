@@ -25,4 +25,9 @@
 </form>
 <a style="font-size:40px;color:white" href="QuizList.jsp">Quizzes List</a>
 </body>
+
+<br>
+<form action = "HomePage.jsp" method="post">
+<input type = "submit" value = "Home" class="button"/>
+</form>
 </html>
