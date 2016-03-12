@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+/* @CHARSET "ISO-8859-1";
+ */
+ body{
+	background-color: rgb(140,120,250);
+}  
+
+
+
+ .button {  
+	background: #00FFFF;   
+	font-size: 20px;
+	border-radius: 12px;  
+	transition: all 2s;
+	cursor: pointer;  
+	margin: 7px;
+	text-align: center;
+}
+ .button:hover {
+	background-color: #FF0000;
+	padding-right: = 25px;
+	
+}
+ul{
+    list-style-type: none;
+}
+.linkB{
+     background: none;
+     border: none;
+     color: #00ff99;
+     font-size: 100%;
+     text-decoration: underline;
+     cursor: pointer;     
+}
+.name{
+/*	text-align: center;
+*/	text-indent: 65px;
+	color: white;
+}
+.bio{
+	color: white;
+}
+.quizH{
+	color: white;
+}
+.friends{
+	color: white;
+}
+.addFriend{
+	color: white;
+}
+.Button{
+
+	background: #00FFFF;   
+	font-size: 20px;
+	border-radius: 12px;  
+	transition: all 2s;
+	cursor: pointer;
+	margin: 7px;
+	text-align: center;
+}
+.Button:hover {
+	background-color: #FF0000;
+	padding-right: = 25px;
+	
+}
+
+.unreadMessage{
+	background: #FF0000;   
+	font-size: 20px;
+	border-radius: 12px;  
+	transition: all 2s;
+	cursor: pointer;
+	margin: 7px;
+	text-align: center;
+}
