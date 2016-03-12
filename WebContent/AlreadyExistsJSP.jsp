@@ -16,9 +16,10 @@
 <form action="AccountCreateServlet" method="post">  
 <p>Name: <input type="text" name="name" /></p>    
 
-<p>Password: <input type="text" name="password"/>
+<p>Password: <input type="password" name="password"/>
 <input type="submit" value = "Login" /></p>
 </form>
+<a href="CreateAccount.jsp">Create Account</a>
 
 </body>
 </html>
