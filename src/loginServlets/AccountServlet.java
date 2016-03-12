@@ -60,8 +60,10 @@ public class AccountServlet extends HttpServlet {
         	}
         	String salt = Security.getSalt(rand);
         	String hashPassword = Security.getHashed(password, salt);
-        	TableAbstraction.updateUser(name, new User(name, hashPassword, salt), con);
+        	user = new User(name, hashPassword, salt);
+        	TableAbstraction.updateUser(name, user, con);
         	request.getSession().setAttribute("user", name);
+        	request.getSession().setAttribute("uid", name);
         	request.getRequestDispatcher("HomePage.jsp").forward(request, response);
         }
 	}
