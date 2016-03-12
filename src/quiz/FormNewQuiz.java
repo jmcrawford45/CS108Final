@@ -43,7 +43,7 @@ public class FormNewQuiz extends HttpServlet {
 		request.getSession().removeAttribute("newquiz");
 		int quiz_id = TableAbstraction.getID(qm.con);
 		
-		int creator_id = Integer.parseInt(request.getServletContext().getInitParameter("userid"));
+		int creator_id = (Integer)request.getSession().getAttribute("uid");
 		long time = System.currentTimeMillis();
 		int category_id = Integer.parseInt(request.getParameter("category_id"));
 		String name = request.getParameter("name");

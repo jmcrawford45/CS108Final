@@ -49,7 +49,7 @@ public class GradeQuiz extends HttpServlet {
 		}
 		long start = Long.parseLong(request.getParameter("start"));
 		int pid = TableAbstraction.getID(qm.con);
-		int userid = Integer.parseInt(request.getParameter("userid"));
+		int userid = (Integer)request.getSession().getAttribute("uid");
 		Performance p = q.gradeQuiz(pid, userid, start, q.questions, input);
 		request.setAttribute("performance", p);
 		qm.addPerformance(p);
