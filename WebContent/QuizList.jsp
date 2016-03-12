@@ -30,5 +30,9 @@ for(int i = 0; i < quizzes.size(); i++){
 <form action="SetUpNewQuiz.jsp" method="post">
 <input type = "submit" value = "Create a new Quiz" class="button"/>
 </form>
+<br>
+<form action = "HomePage.jsp" method="post">
+<input type = "submit" value = "Home" class="button"/>
+</form>
 </body>
 </html>
