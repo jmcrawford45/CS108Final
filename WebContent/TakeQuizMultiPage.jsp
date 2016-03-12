@@ -23,5 +23,9 @@
 	String s = q.returnHTMLSingleQuestion();
 	out.print(s);
 %>
+<br>
+<form action = "HomePage.jsp" method="post">
+<input type = "submit" value = "Home" class="button"/>
+</form>
 </body>
 </html>
