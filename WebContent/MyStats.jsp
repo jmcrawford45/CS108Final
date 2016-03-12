@@ -9,6 +9,7 @@
 </head>
 <body>
 <% 
+boolean hasStats = false;
 user.User defUser = tableabstraction.TableAbstraction.getUser(request);
 if(defUser == null){
 	RequestDispatcher dispatch = 
@@ -17,6 +18,7 @@ if(defUser == null){
 	return;
 }
 if(defUser.getQuizzes().size() != 0){
+	hasStats = true;
 	%>  <h1>Recent Activity</h1>   <%
 	java.util.ArrayList<user.FriendEntry> quizHistory = defUser.getQuizzes();
 	for(user.FriendEntry e: quizHistory){
@@ -27,6 +29,17 @@ if(defUser.getQuizzes().size() != 0){
 		<%=u1 + e %><a href = "QuizSummary.jsp?quiz_id=<%=id%>"><%=quiz%></a><br> <%
 	} 
 }
+
+if(!hasStats){
+	%><h1> Take Some Quizzes to View Your Stats!</h1>  <% 
+}
+
+
 %>
+
+<br>
+<form action = "HomePage.jsp" method="post">
+<input type = "submit" value = "Home" class="button"/>
+</form>
 </body>
 </html>
