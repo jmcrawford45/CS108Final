@@ -35,6 +35,27 @@ String from = defUser.getDisplayName();
 <input type="submit" value = "Challenge!" />
 </form>
 
+
+<%
+	quiz.QuizManager qm = new QuizManager(DBConnection.connect());
+	request.getSession().setAttribute("quizmanager", qm);
+	ArrayList<Quiz> quizzes = qm.getAllQuizzes();
+%>
+</head>
+<body>
+<h1>Quizzes List</h1>
+<p>Pick a quiz id from below!</p>
+<% 
+for(int i = 0; i < quizzes.size(); i++){   
+	Quiz q = quizzes.get(i);
+	user.User u = tableabstraction.TableAbstraction.getUser(q.creator_id, qm.con);
+	String u1 = (u == null) ? "null" : u.getDisplayName();
+	%>
+	<p><%=q.name%>--<%=q.id%><br>
+<%	
+}
+%>
+
 <br>
 <form action = "HomePage.jsp" method="post">
 <input type = "submit" value = "Home" class="button"/>
