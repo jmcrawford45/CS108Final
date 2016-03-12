@@ -16,6 +16,8 @@
 String body = request.getParameter("body");
 String from = request.getParameter("from");
 String link = request.getParameter("link");
+int linkInt = Integer.parseInt(link);//addition
+
 String index = request.getParameter("index");
 
 %>
@@ -27,8 +29,7 @@ String index = request.getParameter("index");
 <input type="submit" value = "Decline Challenge" />
 </form>
 
-<a href="GoToQuiz.jsp?to=<%=link%>"> Accept Challenge!</a>
-
+<a href="QuizSummary.jsp?quiz_id=<%=linkInt %>"> Accept Challenge!</a>
 
 <br>
 <form action = "HomePage.jsp" method="post">
