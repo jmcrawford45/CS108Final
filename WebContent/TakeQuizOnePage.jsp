@@ -9,6 +9,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link REL="StyleSheet" TYPE="text/css" HREF="Style.css">
+<link href = "j.png" rel="icon" type="image/gif">
 <%
 	QuizManager qm = (QuizManager)request.getServletContext().getAttribute("quizmanager");
 	Quiz quiz = (Quiz)request.getSession().getAttribute("quiztaken");
