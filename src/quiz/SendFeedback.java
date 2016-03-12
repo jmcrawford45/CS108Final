@@ -41,7 +41,7 @@ public class SendFeedback extends HttpServlet {
 		QuizManager qm = (QuizManager)request.getServletContext().getAttribute("quizmanager");
 		int qid = Integer.parseInt(request.getParameter("quizid"));
 		Quiz q = qm.getQuizByID(qid);
-		int user_id = Integer.parseInt(request.getParameter("userid"));
+		int user_id = (Integer)request.getSession().getAttribute("uid");
 		int rating = 0;
 		if (request.getParameter("rating") != null) {
 			rating = Integer.parseInt(request.getParameter("rating"));
