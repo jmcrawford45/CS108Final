@@ -23,5 +23,9 @@
 <input type = "submit" value = "Rate Quiz" class="button"/>
 </form>
 <a style="font-size:40px;color:white" href="QuizList.jsp">Quizzes List</a>
+<br>
+<form action = "HomePage.jsp" method="post">
+<input type = "submit" value = "Home" class="button"/>
+</form>
 </body>
 </html>
