@@ -35,7 +35,7 @@ public class PictureResponseQuestion extends ResponseQuestion {
 	public String returnHTMLSingleQuestion() {
 		String result = "";
 		result += "<form action=\"submitAnswer\" method=\"post\"> \r";
-		result += "<img src=\"" + getPicURL() + "\" alt=\"" + getQuestion() + "\" width=\"500\"> <br> \r";
+		result += "<img src=\"" + getPicURL() + "\" alt=\"" + getQuestion() + "\" width=\"250\"> <br> \r";
 		result += getQuestion();
 		result += "<br><br> \r";
 		result += "<input name=\"input\" type=\"text\"/> \r";
@@ -48,7 +48,7 @@ public class PictureResponseQuestion extends ResponseQuestion {
 	@Override
 	public String returnHTMLQuestion(int index) {
 		String result = "";
-		result += "<img src=\"" + getPicURL() + "\" alt=\"" + getQuestion() + "\" width=\"500\"> <br> \r";
+		result += "<img src=\"" + getPicURL() + "\" alt=\"" + getQuestion() + "\" width=\"250\"> <br> \r";
 		result += getQuestion();
 		result += "<br><br> \r";
 		result += "<input name=\"input" + index + "\" type=\"text\"/> \r";
