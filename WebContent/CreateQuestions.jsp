@@ -42,11 +42,11 @@
 <input type="radio" value="response-question" name="type" />Response Question<br>
 <input type="radio" value="fib-question" name="type" />Fill-in-the-Blank Question<br>
 <input type="radio" value="mc-question" name="type" />Multiple Choice Question<br>
-<input type="radio" value="mamc-question" name="type" />Multiple Answer Multiple Choice Question<br>
+<input type="radio" value="mcma-question" name="type" />Multiple Answer Multiple Choice Question<br>
 <input type="radio" value="maresponse-question" name="type" />Multiple Answer Multiple Response Question<br>
 <input type="radio" value="matching-question" name="type" />Matching Question
 (Number of questions: <input type="text" name="numberquestions" />) <br>
-<input type="radio" value="picresponse-question" name="type" />Picture-Response Question<br><br>
+<input type="radio" value="pic-response-question" name="type" />Picture-Response Question<br><br>
 
 <input type="submit" value="Submit"/>
 </form>

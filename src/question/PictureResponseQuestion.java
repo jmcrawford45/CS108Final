@@ -9,13 +9,13 @@ public class PictureResponseQuestion extends ResponseQuestion {
 	public PictureResponseQuestion(String question, Answer answer, String url) {
 		super(question, answer);
 		picURL = url;
-		this.type = "pic-reponse-question";
+		this.type = "pic-response-question";
 	}
 	
 	public PictureResponseQuestion(String question, String answer, String url) {
 		super(question, answer);
 		picURL = url;
-		this.type = "pic-reponse-question";
+		this.type = "pic-response-question";
 	}
 	
 	public String getPicURL(){
