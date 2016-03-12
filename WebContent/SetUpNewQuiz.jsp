@@ -29,5 +29,10 @@
 <input type="checkbox" name="practice" value="practice">Allow quiz to be taken in practice mode<br><br>
 <input type = "submit" value = "Create Questions" class="button"/>
 </form>
+
+<br>
+<form action = "HomePage.jsp" method="post">
+<input type = "submit" value = "Home" class="button"/>
+</form>
 </body>
 </html>
