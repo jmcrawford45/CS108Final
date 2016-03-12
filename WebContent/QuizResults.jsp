@@ -7,6 +7,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link REL="StyleSheet" TYPE="text/css" HREF="Style.css">
+<link href = "j.png" rel="icon" type="image/gif">
 <%
 	Performance p = (Performance)request.getAttribute("performance");
 	int userid = Integer.parseInt(request.getParameter("userid"));
