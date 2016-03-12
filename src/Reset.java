@@ -26,6 +26,8 @@ public class Reset {
             stmt.executeUpdate("CREATE TABLE users(uid INT, id varchar(255), user BLOB);");
             stmt.executeUpdate("DROP TABLE IF EXISTS stats;");
             stmt.executeUpdate("CREATE TABLE stats(stats BLOB);");
+            stmt.executeUpdate("DROP TABLE IF EXISTS questions;");
+            stmt.executeUpdate("CREATE TABLE questions(question_id INT, type varchar(20), question varchar(1000), answer varchar(1000), additional(1000)");
     		} catch (SQLException e) {
             e.printStackTrace();
             }
